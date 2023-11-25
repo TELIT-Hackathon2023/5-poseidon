@@ -8,16 +8,16 @@ const Header = () => {
     <div className='container'>
       <header className="header">
 
-        <Link className='logo' to='/home'>
+        <Link className='logo' to='/'>
           <FaParking className='header__icon' />
         </Link>
 
         <nav className="header-nav">
-          <Link className='icon' to='/register'>
+          <Link className='icon' to='/'>
             <FaMapMarked />
           </Link>
 
-          <Link className='icon' to='/register'>
+          <Link className='icon' to='/'>
             <FaUser />
           </Link>
         </nav>
@@ -28,4 +28,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

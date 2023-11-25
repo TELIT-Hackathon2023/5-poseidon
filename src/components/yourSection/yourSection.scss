@@ -1,0 +1,17 @@
+.your-section {
+    position: relative; // Додано position: relative для використання z-index
+    width: 60%;
+    margin: -10px auto 0; // Додано від'ємний margin-top
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); // Тінь для враження глибини
+    z-index: 2; // Додано z-index для визначення порядку накладання
+
+    span {
+        display: block;
+        margin: 0 auto;
+    }
+}
