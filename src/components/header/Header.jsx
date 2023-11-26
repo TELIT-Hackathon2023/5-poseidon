@@ -13,7 +13,7 @@ const Header = () => {
         </Link>
 
         <nav className="header-nav">
-          <Link className='icon' to='/'>
+          <Link className='icon' to='/map'>
             <FaMapMarked />
           </Link>
 

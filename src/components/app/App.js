@@ -6,14 +6,12 @@ import Header from '../header/Header';
 import HomePage from '../../pages/homePage/HomePage';
 import RegistrationForm from '../../pages/registrationForm/RegistrationForm';
 import LoginForm from '../../pages/loginForm/LoginForm';
+import MapPage from '../../pages/mapPage/MapPage';
 
 function App() {
-  // const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // const handleLogin = () => {
-  //   setIsAuthenticated(true);
-  // }
   const isAuthenticated = useSelector(state => state.autentificate.isAuthenticated);
+  console.log(isAuthenticated);
 
   return (
     <div className="App">
@@ -34,6 +32,7 @@ function App() {
             <Route index element={<LoginForm />} />
           )}
           <Route path="/register" element={<RegistrationForm />} />
+          <Route path="/map" element={<MapPage />} />
         </Route>
       </Routes>
     </div>

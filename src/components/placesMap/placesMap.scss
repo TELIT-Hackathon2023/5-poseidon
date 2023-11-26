@@ -1,0 +1,43 @@
+.places-map {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__grid {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: repeat(5, 40px);
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    }
+}
+
+.place-box {
+    width: 90px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-width: 3px 3px 3px 0;
+    border-style: solid;
+    border-color: black;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.chosen {
+    border: 1px solid red;
+}
